@@ -30,10 +30,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 4.0.0'
   gem 'simplecov', require: false, group: :test
+  gem 'csv'
 end
 
 group :test do 
   gem 'database_cleaner-active_record'
+  gem 'shoulda-matchers'
 end
 
 group :development do
