@@ -1,5 +1,6 @@
 class Customer < ApplicationRecord
   validates_presence_of :first_name, :last_name
+  has_many :invoices
 
   def self.import(filename)
     CSV.foreach(filename, headers: true) do |row|
@@ -8,6 +9,4 @@ class Customer < ApplicationRecord
       Customer.create(first_name: first_name, last_name: last_name)
     end
   end 
-
-
 end

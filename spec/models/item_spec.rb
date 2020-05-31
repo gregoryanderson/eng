@@ -15,9 +15,9 @@ RSpec.describe Item, type: :model do
 
   describe '.import' do
     context 'valid CSV file' do 
-      it "imports all customers" do
+      skip "imports all customers" do
         filepath = "./spec/fixtures/item_test.csv"
-        Merchant.create(name: "Lucy")
+        Merchant.create(name: "lalala")
         Item.import(filepath)
         expect(Item.count).to eq(5)
       end

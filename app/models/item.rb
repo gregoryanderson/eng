@@ -16,6 +16,7 @@ class Item < ApplicationRecord
       if item.save
         item
       else 
+        byebug
         p item.errors.full_messages
       end
     end

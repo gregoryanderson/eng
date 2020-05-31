@@ -12,6 +12,7 @@ RSpec.configure do |config|
   end
 
   config.after(:each) do
+    p "cleaned"
     DatabaseCleaner.clean
   end
 end
