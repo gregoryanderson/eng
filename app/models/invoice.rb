@@ -14,8 +14,6 @@ class Invoice < ApplicationRecord
       if invoice.save
         invoice
       else 
-        p "Hey"
-        p Merchant.pluck(:id)
         p invoice.errors.full_messages
       end
     end

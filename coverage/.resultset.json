@@ -224,16 +224,16 @@
           null,
           null,
           1,
-          16,
+          20,
           null,
           null,
           1,
-          16,
+          20,
           null,
           null,
           1,
-          16,
-          16,
+          20,
+          20,
           null,
           null
         ]
@@ -258,6 +258,62 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/spec/models/invoice_item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/models/invoice_item.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -310,8 +366,6 @@
           0,
           0,
           null,
-          0,
-          0,
           0,
           null,
           null,
@@ -419,6 +473,6 @@
         ]
       }
     },
-    "timestamp": 1590890272
+    "timestamp": 1590892179
   }
 }
