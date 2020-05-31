@@ -224,16 +224,16 @@
           null,
           null,
           1,
-          20,
+          28,
           null,
           null,
           1,
-          20,
+          28,
           null,
           null,
           1,
-          20,
-          20,
+          28,
+          28,
           null,
           null
         ]
@@ -332,6 +332,9 @@
           1,
           2,
           2,
+          2,
+          2,
+          2,
           null,
           null,
           1,
@@ -350,6 +353,9 @@
       },
       "/Users/gregoryanderson/turing/grad/eng/app/models/invoice.rb": {
         "lines": [
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -388,6 +394,8 @@
           null,
           1,
           2,
+          2,
+          2,
           null,
           null,
           1,
@@ -405,6 +413,8 @@
       },
       "/Users/gregoryanderson/turing/grad/eng/app/models/item.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -471,8 +481,33 @@
           null,
           null
         ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/spec/models/transaction_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/models/transaction.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1590892179
+    "timestamp": 1590893470
   }
 }
