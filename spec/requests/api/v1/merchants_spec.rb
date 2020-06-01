@@ -50,3 +50,4 @@ RSpec.describe 'As a visitor', type: :request do
     end
   end
 end
+
