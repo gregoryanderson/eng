@@ -19,7 +19,7 @@ RSpec.describe Invoice, type: :model do
   describe '.import' do
     context 'valid CSV file' do 
       skip "imports all invoices" do
-        filename = "./spec/fixtures/invoice_test.csv"
+        filename = "./spec/fixtures/Invoice_test.csv"
         Customer.find_or_create_by(first_name: "Greg", last_name: "Anderson")
         Merchant.find_or_create_by(name: "Lucy")
         Invoice.import(filename)

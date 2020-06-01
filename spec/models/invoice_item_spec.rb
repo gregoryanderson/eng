@@ -15,7 +15,7 @@ RSpec.describe InvoiceItem, type: :model do
   describe '.import' do
     context 'valid CSV file' do 
       skip "imports all customers" do
-        filename = "./spec/fixtures/invoice_item_test.csv"
+        filename = "./spec/fixtures/InvoiceItem_test.csv"
         InvoiceItem.import(filename)
         expect(InvoiceItem.count).to eq(5)
       end
