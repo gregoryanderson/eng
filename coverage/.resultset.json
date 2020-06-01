@@ -216,6 +216,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -229,16 +230,16 @@
           null,
           null,
           1,
-          30,
+          31,
           null,
           null,
           1,
-          30,
+          31,
           null,
           null,
           1,
-          30,
-          30,
+          31,
+          31,
           null,
           null
         ]
@@ -532,6 +533,49 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/items_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          3,
+          3,
+          null,
+          3,
+          null,
+          3,
+          3,
+          3,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/merchants_spec.rb": {
         "lines": [
           1,
@@ -594,6 +638,27 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/serializers/item_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants_controller.rb": {
         "lines": [
           1,
@@ -616,6 +681,6 @@
         ]
       }
     },
-    "timestamp": 1590982021
+    "timestamp": 1590985026
   }
 }
