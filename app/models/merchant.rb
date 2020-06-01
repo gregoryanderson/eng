@@ -5,7 +5,8 @@ class Merchant < ApplicationRecord
   def self.import(filepath)
     CSV.foreach(filepath, headers: true) do |row|
       name = row["name"]
-      Merchant.create(name: name)
+      id = row["id"]
+      Merchant.create(name: name, id: id)
     end
   end 
 end

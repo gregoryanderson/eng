@@ -11,9 +11,11 @@ class Invoice < ApplicationRecord
       customer_id = row["customer_id"]
       merchant_id = row["merchant_id"]
       status = row["status"]
+      id = row["id"]
       invoice = Invoice.new(customer_id: customer_id, 
                   merchant_id: merchant_id, 
-                  status: status)
+                  status: status,
+                  id: id)
       if invoice.save
         invoice
       else 
