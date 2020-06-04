@@ -226,6 +226,7 @@
           null,
           1,
           1,
+          1,
           null,
           null,
           1,
@@ -242,16 +243,16 @@
           null,
           null,
           1,
-          38,
+          39,
           null,
           null,
           1,
-          38,
+          39,
           null,
           null,
           1,
-          38,
-          38,
+          39,
+          39,
           null,
           null
         ]
@@ -635,6 +636,44 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/invoices/invoices_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/items_spec.rb": {
         "lines": [
           1,
@@ -720,9 +759,7 @@
           1,
           null,
           1,
-          null,
           1,
-          null,
           1,
           null,
           null,
@@ -979,8 +1016,8 @@
           1,
           null,
           null,
-          null,
-          null,
+          1,
+          1,
           null,
           null
         ]
@@ -1072,6 +1109,6 @@
         ]
       }
     },
-    "timestamp": 1591241032
+    "timestamp": 1591242000
   }
 }

@@ -12,9 +12,7 @@ RSpec.describe 'As a visitor', type: :request do
       @item_5 = Item.create(name: "Thing Five", description: "Thing five is this thing", unit_price_in_cents: 56789, id: 5, merchant_id: 2)
 
       @items = [@item_1, @item_2, @item_3]
-
       get "/api/v1/merchants/#{@merchant_1.id}/items"
-
       @hash = JSON.parse(response.body)
     end
 
