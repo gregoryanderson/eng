@@ -234,6 +234,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
@@ -251,16 +252,16 @@
           null,
           null,
           1,
-          54,
+          55,
           null,
           null,
           1,
-          54,
+          55,
           null,
           null,
           1,
-          54,
-          54,
+          55,
+          55,
           null,
           null
         ]
@@ -1082,6 +1083,40 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/invoices/invoice_merchant_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/invoices/invoices_index_spec.rb": {
         "lines": [
           1,
@@ -1616,6 +1651,23 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/invoices/merchant_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/serializers/merchant_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/invoices/invoices_controller.rb": {
         "lines": [
           1,
@@ -1673,14 +1725,6 @@
           null
         ]
       },
-      "/Users/gregoryanderson/turing/grad/eng/app/serializers/merchant_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants/merchants_controller.rb": {
         "lines": [
           1,
@@ -1695,6 +1739,6 @@
         ]
       }
     },
-    "timestamp": 1591303821
+    "timestamp": 1591304122
   }
 }
