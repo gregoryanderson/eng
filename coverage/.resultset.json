@@ -230,6 +230,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
@@ -247,16 +248,16 @@
           null,
           null,
           1,
-          40,
+          41,
           null,
           null,
           1,
-          40,
+          41,
           null,
           null,
           1,
-          40,
-          40,
+          41,
+          41,
           null,
           null
         ]
@@ -591,6 +592,42 @@
           null,
           null,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/invoices/invoice_customer_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -1061,6 +1098,27 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/invoices/customer_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/serializers/customer_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/invoices/invoice_items_controller.rb": {
         "lines": [
           1,
@@ -1186,6 +1244,6 @@
         ]
       }
     },
-    "timestamp": 1591298074
+    "timestamp": 1591300517
   }
 }
