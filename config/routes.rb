@@ -30,7 +30,7 @@ Rails.application.routes.draw do
         get '/find_all', to: 'find#index'
         # get '/random', to: 'random#show'
         get '/:id', to: 'invoice_items#show'
-        # get '/:id/item', to: 'item#show'
+        get '/:id/item', to: 'item#show'
         # get '/:id/invoice', to: 'invoice#show'
       end
 
