@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-06-05T13:01:02-06:00">2020-06-05T13:01:02-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-06-05T15:49:27-06:00">2020-06-05T15:49:27-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.22%
+  96.59%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.78
+         1.86
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>67</b> files in total.
+    <b>69</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>1455</b> relevant lines,
-    <span class="green"><b>1400</b> lines covered</span> and
-    <span class="red"><b>55</b> lines missed. </span>
+    <b>1642</b> relevant lines,
+    <span class="green"><b>1586</b> lines covered</span> and
+    <span class="red"><b>56</b> lines missed. </span>
     (<span class="green">
-  96.22%
+  96.59%
 </span>
 )
   </div>
@@ -69,6 +69,17 @@
         </tr>
       </thead>
       <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#e05e02184ef67d584619547ee8f4dd3410c0c29a" class="src_link" title="app/controllers/api/v1/invoice_items/find_controller.rb">app/controllers/api/v1/invoice_items/find_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">94.12 %</td>
+            <td class="cell--number">38</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">4.24</td>
+            
+          </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c7565ccf30eb752b6396a0d8215b3f50acf91dc7" class="src_link" title="app/controllers/api/v1/invoice_items/invoice_items_controller.rb">app/controllers/api/v1/invoice_items/invoice_items_controller.rb</a></td>
@@ -341,7 +352,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.80</td>
+            <td class="cell--number">5.40</td>
             
           </tr>
         
@@ -503,8 +514,8 @@
             <td class="strong t-file__name"><a href="#29f15a8b0f3e2eca9aa7f7ca60c0e0d42458b566" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">53</td>
-            <td class="cell--number">31</td>
-            <td class="cell--number">31</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">33</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -562,6 +573,17 @@
             <td class="cell--number">7</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.43</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#6f7cbc7ad128e5169ece962d7b5ff634ed2f244a" class="src_link" title="spec/requests/api/v1/invoice_items/invoice_items_find_index_spec.rb">spec/requests/api/v1/invoice_items/invoice_items_find_index_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">235</td>
+            <td class="cell--number">168</td>
+            <td class="cell--number">168</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.14</td>
             
           </tr>
         
@@ -803,7 +825,7 @@
             <td class="cell--number">10</td>
             <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">31.00</td>
+            <td class="cell--number">33.80</td>
             
           </tr>
         
@@ -823,6 +845,455 @@
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="e05e02184ef67d584619547ee8f4dd3410c0c29a">
+  <div class="header">
+    <h3>app/controllers/api/v1/invoice_items/find_controller.rb</h3>
+    <h4>
+      <span class="green">
+  94.12%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>17</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Api::V1::InvoiceItems::FindController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">    render json: InvoiceItemSerializer.new(found_records(:find_by))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="7">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    render json: InvoiceItemSerializer.new(found_records(:where))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def parameters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="13">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">    params.permit(:id,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">                  :created_at,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">                  :updated_at,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">                  :invoice_id,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">                  :item_id,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">                  :quantity,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">                  :unit_price_in_cents)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def attribute</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="14" data-linenumber="23">
+            <span class="hits">14</span>
+            
+
+            
+
+            <code class="ruby">    parameters.keys.first</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def value</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="27">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    parameters.values.first</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def found_records(search_method)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="31">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    if attribute == &#39;unit_price_in_cents&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      formatted_value = value.delete(&#39;.&#39;).to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      InvoiceItem.send(search_method, attribute =&gt; formatted_value)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="6" data-linenumber="35">
+            <span class="hits">6</span>
+            
+
+            
+
+            <code class="ruby">      InvoiceItem.send(search_method, attribute =&gt; value)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="c7565ccf30eb752b6396a0d8215b3f50acf91dc7">
   <div class="header">
@@ -5665,8 +6136,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="6">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="23" data-linenumber="6">
+            <span class="hits">23</span>
             
 
             
@@ -8141,8 +8612,8 @@
     
 
     <div class="t-line-summary">
-      <b>31</b> relevant lines.
-      <span class="green"><b>31</b> lines covered</span> and
+      <b>33</b> relevant lines.
+      <span class="green"><b>33</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -8462,24 +8933,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">        # get &#39;/find&#39;, to: &#39;find#show&#39;</code>
+            
+
+            <code class="ruby">        get &#39;/find&#39;, to: &#39;find#show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">        # get &#39;/find_all&#39;, to: &#39;find#index&#39;</code>
+            
+
+            <code class="ruby">        get &#39;/find_all&#39;, to: &#39;find#index&#39;</code>
           </li>
         </div>
       
@@ -10158,6 +10629,2622 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="6f7cbc7ad128e5169ece962d7b5ff634ed2f244a">
+  <div class="header">
+    <h3>spec/requests/api/v1/invoice_items/invoice_items_find_index_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>168</b> relevant lines.
+      <span class="green"><b>168</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;As a visitor&#39;, type: :request do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="5">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @merchant = Merchant.create(name: &quot;Greg&quot;, id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="6">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @item_1 = Item.create(name: &quot;Thing One&quot;, description: &quot;Thing one is this thing&quot;, unit_price_in_cents: 12345, id: 1, merchant_id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="7">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @item_2 = Item.create(name: &quot;Thing One&quot;, description: &quot;Thing one is this thing&quot;, unit_price_in_cents: 12345, id: 2, merchant_id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="8">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @item_3 = Item.create(name: &quot;Thing One&quot;, description: &quot;Thing one is this thing&quot;, unit_price_in_cents: 12345, id: 3, merchant_id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="9">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @item_4 = Item.create(name: &quot;Thing One&quot;, description: &quot;Thing one is this thing&quot;, unit_price_in_cents: 12345, id: 4, merchant_id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="10">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @item_5 = Item.create(name: &quot;Thing One&quot;, description: &quot;Thing one is this thing&quot;, unit_price_in_cents: 12345, id: 5, merchant_id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="11">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @item_6 = Item.create(name: &quot;Thing One&quot;, description: &quot;Thing one is this thing&quot;, unit_price_in_cents: 12345, id: 6, merchant_id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="12">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @customer = Customer.create(first_name: &quot;Lucy&quot;, last_name: &quot;Conklin&quot;, id: 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="13">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @customer_2 = Customer.create(first_name: &quot;Lucy&quot;, last_name: &quot;Conklin&quot;, id: 2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="14">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice = Invoice.create(merchant_id: 1, customer_id: 1, id: 1, status: &quot;shipped&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="15">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_2 = Invoice.create(merchant_id: 1, customer_id: 2, id: 2, status: &quot;shipped&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="16">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_1 = InvoiceItem.create(item_id: 1, invoice_id: 1, id: 1, quantity: 1, unit_price_in_cents: 12345, updated_at: &#39;2032-01-01&#39;) # unique ID, updated_at</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="17">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_2 = InvoiceItem.create(item_id: 2, invoice_id: 1, id: 2, unit_price_in_cents: 12345, quantity: 23) # unique quantity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="18">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_3 = InvoiceItem.create(item_id: 3, invoice_id: 1, id: 3, quantity: 1, unit_price_in_cents: 60000) # unique unit_price</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="19">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_4 = InvoiceItem.create(item_id: 4, invoice_id: 1, id: 4, quantity: 1, unit_price_in_cents: 12345)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="20">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_5 = InvoiceItem.create(item_id: 5, invoice_id: 1, id: 5, quantity: 1, unit_price_in_cents: 12345, created_at: &#39;1234-12-23&#39;) # unique created_at</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="21">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_6 = InvoiceItem.create(item_id: 6, invoice_id: 2, id: 6, quantity: 1, unit_price_in_cents: 12345) # unique invoice_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="22">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_1a = InvoiceItem.create(item_id: 1, invoice_id: 1, id: 7, quantity: 1, unit_price_in_cents: 12345, updated_at: &#39;2032-01-01&#39;) # unique updated_at</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="23">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_2a = InvoiceItem.create(item_id: 2, invoice_id: 1, id: 8, unit_price_in_cents: 12345, quantity: 23) # unique quantity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="24">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_3a = InvoiceItem.create(item_id: 3, invoice_id: 1, id: 9, quantity: 1, unit_price_in_cents: 60000) # unique unit_price</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="25">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_4a = InvoiceItem.create(item_id: 4, invoice_id: 1, id: 10, quantity: 1, unit_price_in_cents: 12345) # unique item_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="26">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_5a = InvoiceItem.create(item_id: 5, invoice_id: 1, id: 11, quantity: 1, unit_price_in_cents: 12345, created_at: &#39;1234-12-23&#39;) # unique created_at</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="27">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @invoice_item_6a = InvoiceItem.create(item_id: 1, invoice_id: 2, id: 12, quantity: 1, unit_price_in_cents: 12345) # unique invoice_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;when I send a get request to the invoice_items find_all path&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its id attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?id=#{@invoice_item_1.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_1]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its quantity attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?quantity=#{@invoice_item_2.quantity}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="72">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_2, @invoice_item_2a]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="74">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="75">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="77">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="79">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="80">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="81">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="82">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="83">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="84">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its unit_price attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="90">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="91">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        formatted_price = sprintf(&#39;%.2f&#39;, @invoice_item_3.unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="92">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?unit_price_in_cents=#{formatted_price}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="93">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="96">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="97">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="98">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="99">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="100">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="101">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="102">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_3, @invoice_item_3a]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="103">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="104">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="105">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="106">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="107">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="108">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="109">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="110">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="111">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="112">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="113">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="114">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="115">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="116">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="117">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="118">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="119">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its updated_at attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="120">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="121">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?updated_at=#{@invoice_item_1.updated_at}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="122">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="123">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="124">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="125">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="126">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="127">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="128">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="129">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="130">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="131">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_1, @invoice_item_1a]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="132">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="133">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="134">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="135">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="136">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="137">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="138">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="139">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="140">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="141">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="142">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="143">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="144">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="145">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="146">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="147">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="148">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its created_at attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="149">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="150">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?created_at=#{@invoice_item_5.created_at}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="151">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="152">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="153">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="154">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="155">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="156">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="157">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="158">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="159">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="160">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_5, @invoice_item_5a]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="161">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="162">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="163">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="164">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="165">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="166">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="167">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="168">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="169">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="170">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="171">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="172">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="173">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="174">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="175">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="176">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="177">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its invoice_id attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="178">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="179">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?invoice_id=#{@invoice_item_6.invoice_id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="180">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="181">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="182">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="183">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="184">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="185">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="186">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="187">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="188">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="189">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_6, @invoice_item_6a]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="190">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="191">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="192">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="193">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="194">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="195">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="196">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="197">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="198">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="199">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="200">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="201">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="202">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="203">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="204">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="205">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="206">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    describe &#39;by its item_id attribute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="207">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before(:each) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="208">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get &quot;/api/v1/invoice_items/find_all?item_id=#{@invoice_item_4.item_id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="209">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="210">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="211">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="212">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;I get a JSON:API response with attributes of that invoice_item&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="213">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.class).to eq(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="214">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json.keys).to eq([&#39;data&#39;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="215">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].class).to eq(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="216">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@json[&#39;data&#39;].length).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="217">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="218">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expected = [@invoice_item_4, @invoice_item_4a]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="219">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @json[&#39;data&#39;].each_with_index do |item, index|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="220">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;id&#39;]).to eq(expected[index].id.to_s)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="221">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(item[&#39;type&#39;]).to eq(&#39;invoice_item&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="222">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="223">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          attributes = item[&#39;attributes&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="224">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="225">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          formatted_price = sprintf(&#39;%.2f&#39;, expected[index].unit_price_in_cents / 100.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="226">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;id&#39;]).to eq(expected[index].id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="227">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;item_id&#39;]).to eq(expected[index].item_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="228">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;invoice_id&#39;]).to eq(expected[index].invoice_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="229">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;quantity&#39;]).to eq(expected[index].quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="230">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">          expect(attributes[&#39;unit_price&#39;]).to eq(formatted_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="231">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="232">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="233">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="234">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="235">
             
             
 
@@ -28197,8 +31284,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="76" data-linenumber="7">
-            <span class="hits">76</span>
+          <li class="covered" data-hits="83" data-linenumber="7">
+            <span class="hits">83</span>
             
 
             
@@ -28241,8 +31328,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="76" data-linenumber="11">
-            <span class="hits">76</span>
+          <li class="covered" data-hits="83" data-linenumber="11">
+            <span class="hits">83</span>
             
 
             
@@ -28285,8 +31372,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="76" data-linenumber="15">
-            <span class="hits">76</span>
+          <li class="covered" data-hits="83" data-linenumber="15">
+            <span class="hits">83</span>
             
 
             
@@ -28296,8 +31383,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="76" data-linenumber="16">
-            <span class="hits">76</span>
+          <li class="covered" data-hits="83" data-linenumber="16">
+            <span class="hits">83</span>
             
 
             
