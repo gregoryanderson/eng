@@ -61,6 +61,7 @@ Rails.application.routes.draw do
         get '/:id/invoices', to: 'invoices#index'
         get '/:id/transactions', to: 'transactions#index'
         post '/new_customer', to: 'customers#create'
+        delete '/:id/delete', to: 'customers#destroy'
       end
 
       namespace :transactions do 

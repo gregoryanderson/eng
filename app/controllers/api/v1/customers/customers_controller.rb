@@ -16,6 +16,18 @@ class Api::V1::Customers::CustomersController < ApplicationController
     end
   end
 
+  def destroy
+    customer = Customer.find(params[:id])
+    if customer
+      id_number = customer.id
+      Customer.delete(customer)
+      render json: id_number, status: 204
+    else 
+      flash[:notice] = "Something went wrong with your deletion"
+      render json: error(customer), status: 400
+    end
+  end 
+
   private 
 
   def strong_params
