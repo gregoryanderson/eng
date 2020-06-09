@@ -296,16 +296,16 @@
           null,
           null,
           1,
-          98,
+          99,
           null,
           null,
           1,
-          98,
+          99,
           null,
           null,
           1,
-          98,
-          98,
+          99,
+          99,
           null,
           null
         ]
@@ -3200,6 +3200,43 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/transactions/transaction_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/application_controller.rb": {
         "lines": [
           1,
@@ -3637,7 +3674,7 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -3647,6 +3684,6 @@
         ]
       }
     },
-    "timestamp": 1591718151
+    "timestamp": 1591718315
   }
 }
