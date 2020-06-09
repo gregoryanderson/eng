@@ -267,7 +267,7 @@
           1,
           null,
           1,
-          null,
+          1,
           null,
           null,
           1,
@@ -285,16 +285,16 @@
           null,
           null,
           1,
-          98,
+          99,
           null,
           null,
           1,
-          98,
+          99,
           null,
           null,
           1,
-          98,
-          98,
+          99,
+          99,
           null,
           null
         ]
@@ -302,6 +302,8 @@
       "/Users/gregoryanderson/turing/grad/eng/app/models/customer.rb": {
         "lines": [
           1,
+          1,
+          null,
           1,
           1,
           null,
@@ -1135,7 +1137,49 @@
       },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/customers/customer_transaction_index_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          3,
+          3,
+          null,
+          3,
+          null,
+          3,
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null
         ]
       },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/customers/customers_index_spec.rb": {
@@ -3252,6 +3296,24 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/customers/transactions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/serializers/transaction_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/invoice_items/find_controller.rb": {
         "lines": [
           1,
@@ -3587,6 +3649,6 @@
         ]
       }
     },
-    "timestamp": 1591716943
+    "timestamp": 1591717288
   }
 }
