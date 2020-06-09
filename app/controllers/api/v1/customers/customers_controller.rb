@@ -19,9 +19,12 @@ class Api::V1::Customers::CustomersController < ApplicationController
   def destroy
     customer = Customer.find(params[:id])
     if customer
-      id_number = customer.id
+      invoices = Invoice.where(customer_id: customer.id)
+      invoice_ids = invoices.pluck(:id)
+      transactions = Transaction.where(invoice_id: invoice_ids)
+      Transaction.delete(transactions)
+      Invoice.delete(invoices)
       Customer.delete(customer)
-      render json: id_number, status: 204
     else 
       flash[:notice] = "Something went wrong with your deletion"
       render json: error(customer), status: 400
