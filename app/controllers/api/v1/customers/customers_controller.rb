@@ -31,6 +31,15 @@ class Api::V1::Customers::CustomersController < ApplicationController
     end
   end 
 
+  def update
+    customer = Customer.find(params[:id])
+    if customer.update(strong_params)
+     render json: customer
+    else
+     render json: customer.errors, status: :unprocessable_entity
+    end
+  end
+
   private 
 
   def strong_params

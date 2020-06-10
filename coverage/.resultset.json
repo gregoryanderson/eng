@@ -275,6 +275,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
@@ -298,16 +299,16 @@
           null,
           null,
           1,
-          116,
+          118,
           null,
           null,
           1,
-          116,
+          118,
           null,
           null,
           1,
-          116,
-          116,
+          118,
+          118,
           null,
           null
         ]
@@ -1259,6 +1260,34 @@
           3,
           3,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/customers/customer_update_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           null
@@ -3745,9 +3774,18 @@
           null,
           null,
           1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
           null,
           1,
-          2,
+          null,
+          1,
+          4,
           null,
           null,
           1,
@@ -4246,6 +4284,6 @@
         ]
       }
     },
-    "timestamp": 1591737324
+    "timestamp": 1591807194
   }
 }
