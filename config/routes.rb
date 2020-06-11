@@ -4,19 +4,19 @@ Rails.application.routes.draw do
     namespace :v1 do
       
       namespace :merchants do
-        get '/', to: 'merchants#index'
+        get '/revenue', to: 'revenue#show'
         get '/find', to: 'find#show'
         get '/find_all', to: 'find#index'
         get '/:id', to: 'merchants#show'
         get '/:id/items', to: 'items#index'
         get '/:id/invoices', to: 'invoices#index'
         get '/:id/favorite_customer', to: 'favorite_customer#show'
-        # get '/revenue', to: 'revenue#show'
         # get '/most_revenue', to: 'most_revenue#index'
         # get '/random', to: 'random#show'
         post '/new', to: 'merchants#create'
         delete '/:id/delete', to: 'merchants#destroy'
         post '/:id/update', to: 'merchants#update'
+        get '/', to: 'merchants#index'
       end
       
       namespace :items do 
