@@ -16,6 +16,15 @@ class Api::V1::Merchants::MerchantsController < ApplicationController
     end
   end
 
+  def update
+    merchant = Merchant.find(params[:id])
+    if merchant.update(strong_params)
+     render json: merchant
+    else
+     render json: merchant.errors, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     merchant = Merchant.find(params[:id])
     if merchant

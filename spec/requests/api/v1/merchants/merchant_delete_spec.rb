@@ -11,21 +11,20 @@ RSpec.describe 'As a visitor', type: :request do
     @invoice_1 = Invoice.create(merchant_id: 2, customer_id: 1, id: 2, status: "shipped")
   end 
 
-  describe 'when I send a get request to the merchants delete path' do
+  describe 'when I send a delete request to the merchants delete path' do
     before(:each) do
       delete "/api/v1/merchants/#{@merchant.id}/delete"
       @status_code = response.status
-      # @hash = JSON.parse(response.body)
     end
 
-    it 'a user is created in the database' do
+    it 'a merchant is deleted in the database' do
       expect(Merchant.all.length).to eq(1)
       expect(Merchant.first.name).to eq("Lucys")
       expect(Invoice.all.length).to eq(1)
       expect(Item.all.length).to eq(1)
     end
 
-    it 'I receive a status code 201' do
+    it 'I receive a status code 204' do
       expect(@status_code).to eq(204)
     end
   end
