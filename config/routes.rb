@@ -69,7 +69,7 @@ Rails.application.routes.draw do
         get '/find', to: 'find#show'
         # get '/random', to: 'random#show'
         get '/:id', to: 'customers#show'
-        # get '/:id/favorite_merchant', to: 'favorite_merchant#show'
+        get '/:id/favorite_merchant', to: 'favorite_merchant#show'
         get '/:id/invoices', to: 'invoices#index'
         get '/:id/transactions', to: 'transactions#index'
         post '/new', to: 'customers#create'

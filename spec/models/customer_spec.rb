@@ -7,6 +7,13 @@ RSpec.describe Customer, type: :model do
     it { should validate_presence_of :last_name }
   end
 
+  describe 'relationships' do
+    it { should have_many :invoices }
+    it { should have_many(:transactions).through(:invoices)}
+  end
+
+  
+
   describe '.import' do
     context 'valid CSV file' do 
       it "imports all customers" do
