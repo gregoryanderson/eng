@@ -16,6 +16,21 @@ class Api::V1::Merchants::MerchantsController < ApplicationController
     end
   end
 
+  def destroy
+    merchant = Merchant.find(params[:id])
+    if merchant
+      invoices = Invoice.where(merchant_id: merchant.id)
+      # invoice_ids = invoices.pluck(:id)
+      items = Item.where(merchant_id: merchant.id)
+      Item.delete(items)
+      Invoice.delete(invoices)
+      Merchant.delete(merchant)
+    else 
+      flash[:notice] = "Something went wrong with your deletion"
+      render json: error(merchant), status: 400
+    end
+  end 
+
   private 
 
   def strong_params

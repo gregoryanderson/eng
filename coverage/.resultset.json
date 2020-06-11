@@ -228,6 +228,7 @@
           null,
           null,
           1,
+          1,
           null,
           null,
           1,
@@ -300,16 +301,16 @@
           null,
           null,
           1,
-          120,
+          122,
           null,
           null,
           1,
-          120,
+          122,
           null,
           null,
           1,
-          120,
-          120,
+          122,
+          122,
           null,
           null
         ]
@@ -2953,6 +2954,42 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/merchants/merchant_delete_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/merchants/merchant_items_show_all_spec.rb": {
         "lines": [
           1,
@@ -4198,16 +4235,6 @@
           null
         ]
       },
-      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants/items_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants/merchants_controller.rb": {
         "lines": [
           1,
@@ -4229,6 +4256,21 @@
           null,
           null,
           1,
+          2,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          2,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
           null,
           1,
           2,
@@ -4248,6 +4290,16 @@
           null,
           1,
           0,
+          null,
+          null
+        ]
+      },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -4347,6 +4399,6 @@
         ]
       }
     },
-    "timestamp": 1591888549
+    "timestamp": 1591889127
   }
 }
