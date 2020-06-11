@@ -84,6 +84,7 @@ Rails.application.routes.draw do
         get '/random', to: 'random#show'
         get '/:id', to: 'transactions#show'
         get '/:id/invoice', to: 'invoice#show'
+        post '/new', to: 'transactions#create'
       end
     end
   end
