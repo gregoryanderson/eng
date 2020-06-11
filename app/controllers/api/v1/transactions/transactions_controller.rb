@@ -27,6 +27,17 @@ class Api::V1::Transactions::TransactionsController < ApplicationController
     end
   end 
 
+
+  def update
+    transaction = Transaction.find(params[:id])
+    if transaction.update(strong_params)
+     render json: transaction
+    else
+     render json: transaction.errors, status: :unprocessable_entity
+    end
+  end
+
+
   private 
 
   def strong_params

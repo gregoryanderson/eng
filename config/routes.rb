@@ -86,6 +86,7 @@ Rails.application.routes.draw do
         get '/:id/invoice', to: 'invoice#show'
         post '/new', to: 'transactions#create'
         delete '/:id/delete', to: 'transactions#destroy'
+        post '/:id/update', to: 'transactions#update'
       end
     end
   end
