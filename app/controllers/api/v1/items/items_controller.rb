@@ -28,6 +28,15 @@ class Api::V1::Items::ItemsController < ApplicationController
     end
   end 
 
+  def update
+    item = Item.find(params[:id])
+    if item.update(strong_params)
+     render json: item
+    else
+     render json: item.errors, status: :unprocessable_entity
+    end
+  end
+
   private 
 
   def strong_params
