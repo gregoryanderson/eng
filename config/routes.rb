@@ -43,6 +43,7 @@ Rails.application.routes.draw do
         get '/:id/item', to: 'item#show'
         get '/:id/invoice', to: 'invoice#show'
         post '/new', to: 'invoice_items#create'
+        delete '/:id/delete', to: 'invoice_items#destroy'
       end
 
       namespace :invoices do 

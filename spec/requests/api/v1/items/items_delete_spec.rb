@@ -19,7 +19,7 @@ RSpec.describe 'As a visitor', type: :request do
       @status_code = response.status
     end
 
-    it 'a merchant is deleted in the database' do
+    it 'an item is deleted in the database' do
       expect(Item.all.length).to eq(1)
       expect(Item.first.name).to eq("Thing Two")
       expect(InvoiceItem.all.length).to eq(1)

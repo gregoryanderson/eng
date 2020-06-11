@@ -16,6 +16,17 @@ class Api::V1::InvoiceItems::InvoiceItemsController < ApplicationController
     end
   end
 
+  def destroy
+    invoice_item = InvoiceItem.find(params[:id])
+    if invoice_item
+      InvoiceItem.delete(invoice_item)
+    else 
+      flash[:notice] = "Something went wrong with your deletion"
+      render json: error(invoice_item), status: 400
+    end
+  end 
+
+
   private 
 
   def strong_params
