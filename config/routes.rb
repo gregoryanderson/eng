@@ -58,6 +58,7 @@ Rails.application.routes.draw do
         get '/:id', to: 'invoices#show'
         get '/', to: 'invoices#index'
         # get '/random', to: 'random#show'
+        post '/new', to: 'invoices#create'
       end
 
       namespace :customers do
