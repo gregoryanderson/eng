@@ -16,6 +16,17 @@ class Api::V1::Transactions::TransactionsController < ApplicationController
     end
   end
 
+
+  def destroy
+    transaction = Transaction.find(params[:id])
+    if transaction
+      Transaction.delete(transaction)
+    else 
+      flash[:notice] = "Something went wrong with your deletion"
+      render json: error(transaction), status: 400
+    end
+  end 
+
   private 
 
   def strong_params
