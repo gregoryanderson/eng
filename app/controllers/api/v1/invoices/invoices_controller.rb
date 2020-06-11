@@ -30,6 +30,15 @@ class Api::V1::Invoices::InvoicesController < ApplicationController
     end
   end 
 
+  def update
+    invoice = Invoice.find(params[:id])
+    if invoice.update(strong_params)
+     render json: invoice
+    else
+     render json: invoice.errors, status: :unprocessable_entity
+    end
+  end
+
   private 
 
   def strong_params

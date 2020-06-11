@@ -60,6 +60,7 @@ Rails.application.routes.draw do
         # get '/random', to: 'random#show'
         post '/new', to: 'invoices#create'
         delete '/:id/delete', to: 'invoices#destroy'
+        post '/:id/update', to: 'invoices#update'
       end
 
       namespace :customers do
