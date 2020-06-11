@@ -242,6 +242,7 @@
           null,
           1,
           1,
+          1,
           null,
           null,
           1,
@@ -302,16 +303,16 @@
           null,
           null,
           1,
-          124,
+          126,
           null,
           null,
           1,
-          124,
+          126,
           null,
           null,
           1,
-          124,
-          124,
+          126,
+          126,
           null,
           null
         ]
@@ -2358,6 +2359,49 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/items/items_create_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/items/items_find_index_spec.rb": {
         "lines": [
           1,
@@ -4074,7 +4118,7 @@
           1,
           null,
           1,
-          31,
+          33,
           null,
           null
         ]
@@ -4185,6 +4229,51 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/items/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/items/find_controller.rb": {
         "lines": [
           1,
@@ -4225,19 +4314,6 @@
           null,
           10,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/items/items_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
           null,
           null
         ]
@@ -4435,6 +4511,6 @@
         ]
       }
     },
-    "timestamp": 1591889498
+    "timestamp": 1591890112
   }
 }

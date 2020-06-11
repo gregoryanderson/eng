@@ -29,6 +29,7 @@ Rails.application.routes.draw do
         # get '/:id/best_day', to: 'best_day#show'
         get '/:id/merchant', to: 'merchant#show'
         get '/:id/invoice_items', to: 'invoice_items#index'
+        post '/new_item', to: 'items#create'
       end
 
       namespace :invoice_items do
