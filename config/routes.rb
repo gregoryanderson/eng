@@ -14,7 +14,7 @@ Rails.application.routes.draw do
         # get '/revenue', to: 'revenue#show'
         # get '/most_revenue', to: 'most_revenue#index'
         # get '/random', to: 'random#show'
-        post '/new_merchant', to: 'merchants#create'
+        post '/new', to: 'merchants#create'
         delete '/:id/delete', to: 'merchants#destroy'
         post '/:id/update', to: 'merchants#update'
       end
@@ -29,7 +29,7 @@ Rails.application.routes.draw do
         # get '/:id/best_day', to: 'best_day#show'
         get '/:id/merchant', to: 'merchant#show'
         get '/:id/invoice_items', to: 'invoice_items#index'
-        post '/new_item', to: 'items#create'
+        post '/new', to: 'items#create'
         delete '/:id/delete', to: 'items#destroy'
         post '/:id/update', to: 'items#update'
       end
@@ -42,6 +42,7 @@ Rails.application.routes.draw do
         get '/:id', to: 'invoice_items#show'
         get '/:id/item', to: 'item#show'
         get '/:id/invoice', to: 'invoice#show'
+        post '/new', to: 'invoice_items#create'
       end
 
       namespace :invoices do 
@@ -66,7 +67,7 @@ Rails.application.routes.draw do
         # get '/:id/favorite_merchant', to: 'favorite_merchant#show'
         get '/:id/invoices', to: 'invoices#index'
         get '/:id/transactions', to: 'transactions#index'
-        post '/new_customer', to: 'customers#create'
+        post '/new', to: 'customers#create'
         delete '/:id/delete', to: 'customers#destroy'
         post '/:id/update', to: 'customers#update'
       end

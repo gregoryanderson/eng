@@ -7,7 +7,7 @@ RSpec.describe 'As a visitor', type: :request do
 
   describe 'when I send a get request to the items new_item path' do
     before(:each) do
-      post "/api/v1/items/new_item", params: { "name": "Buttermilk",
+      post "/api/v1/items/new", params: { "name": "Buttermilk",
                                                "description": "A good doggy",
                                                "unit_price_in_cents": 54213, 
                                                "merchant_id": 1

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'As a visitor', type: :request do
   describe 'when I send a get request to the customers show path' do
     before(:each) do
-      post "/api/v1/customers/new_customer", params: { "first_name": "Buttermilk",
+      post "/api/v1/customers/new", params: { "first_name": "Buttermilk",
                                                        "last_name": "Anderconk"}
       @status_code = response.status
       @hash = JSON.parse(response.body)

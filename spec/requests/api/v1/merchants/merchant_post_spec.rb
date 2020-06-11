@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'As a visitor', type: :request do
   describe 'when I send a get request to the merchants post path' do
     before(:each) do
-      post "/api/v1/merchants/new_merchant", params: { "name": "Buttermilk"}
+      post "/api/v1/merchants/new", params: { "name": "Buttermilk"}
       @status_code = response.status
       @hash = JSON.parse(response.body)
       @new_merchant = Merchant.last
