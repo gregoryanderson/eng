@@ -25,7 +25,7 @@ class Merchant < ApplicationRecord
     joins(invoices: [:transactions, :invoice_items])
       .where(transactions: { result: 'success' })
       .select('merchants.*,
-              sum(invoice_items.quantity * invoice_items.unit_price)
+              sum(invoice_items.quantity * invoice_items.unit_price_in_cents)
               AS total_revenue')
       .group(:id)
       .order('total_revenue DESC')
