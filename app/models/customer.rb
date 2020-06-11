@@ -12,4 +12,15 @@ class Customer < ApplicationRecord
       Customer.create(id: id, first_name: first_name, last_name: last_name)
     end
   end 
+
+  def self.favorite_customer(merchant_id)
+    select('customers.*, count(transactions.id) AS total_transactions')
+      .joins(invoices: :transactions)
+      .where(transactions: { result: 'success' } )
+      .where(invoices: { merchant_id: merchant_id })
+      .order('total_transactions DESC')
+      .group(:id)
+      .limit(1)
+      .first
+  end
 end

@@ -213,10 +213,10 @@
         "lines": [
           1,
           1,
-          2,
-          2,
-          2,
-          2,
+          8,
+          8,
+          8,
+          8,
           null,
           null
         ]
@@ -237,7 +237,7 @@
         "lines": [
           1,
           1,
-          13,
+          25,
           1,
           1,
           null,
@@ -260,9 +260,9 @@
         "lines": [
           1,
           1,
-          4,
-          4,
-          4,
+          6,
+          6,
+          6,
           null,
           null
         ]
@@ -273,9 +273,9 @@
           1,
           1,
           1,
-          13,
-          13,
-          7,
+          25,
+          25,
+          15,
           null,
           null
         ]
@@ -294,7 +294,7 @@
           1,
           1,
           1,
-          null,
+          1,
           null,
           null,
           null,
@@ -385,16 +385,15 @@
           null,
           null,
           1,
-          151,
+          152,
           null,
           null,
           1,
-          151,
+          152,
           null,
           null,
           1,
-          151,
-          151,
+          152,
           null,
           null
         ]
@@ -414,6 +413,17 @@
           5,
           5,
           null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           null,
           null
         ]
@@ -3501,6 +3511,83 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/merchants/merchant_favorite_customer_show_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/spec/requests/api/v1/merchants/merchant_items_show_all_spec.rb": {
         "lines": [
           1,
@@ -4394,7 +4481,6 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           1,
@@ -5125,6 +5211,16 @@
           null
         ]
       },
+      "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants/favorite_customer_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/gregoryanderson/turing/grad/eng/app/controllers/api/v1/merchants/items_controller.rb": {
         "lines": [
           1,
@@ -5283,6 +5379,6 @@
         ]
       }
     },
-    "timestamp": 1591904018
+    "timestamp": 1591906121
   }
 }

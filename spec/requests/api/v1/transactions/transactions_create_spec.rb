@@ -22,7 +22,6 @@ RSpec.describe 'As a visitor', type: :request do
     end
 
     it 'a transaction is created in the database' do
-      p @new_transaction
       expect(@new_transaction.credit_card_number).to eq("1111222233334444")
       expect(@new_transaction.result).to eq("failed")
       expect(@new_transaction.invoice_id).to eq(1)
