@@ -6,4 +6,35 @@ class Api::V1::Merchants::MerchantsController < ApplicationController
   def show
     render json: MerchantSerializer.new(Merchant.find(params[:id]))
   end 
+
+  def create
+    merchant = Merchant.new(strong_params)
+    if merchant.save
+      render json: MerchantSerializer.new(merchant), status: 201
+    else
+      render json: error(merchant), status: 400
+    end
+  end
+
+  private 
+
+  def strong_params
+    params.permit(:name)
+  end
+
+  def error(object)
+    generate_error(detail: error_details(object),
+                   parameter: error_parameters(object),
+                   title: 'Invalid Request')
+  end
+
+  def error_parameters(object)
+    object.errors.map do |attribute, _error|
+      attribute
+    end.join(', ')
+  end
+
+  def error_details(object)
+    object.errors.full_messages.join(', ') + '.'
+  end
 end

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
         # get '/revenue', to: 'revenue#show'
         # get '/most_revenue', to: 'most_revenue#index'
         # get '/random', to: 'random#show'
+        post '/new_merchant', to: 'merchants#create'
       end
       
       namespace :items do 
