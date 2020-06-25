@@ -1,3 +1,5 @@
+require 'csv'
+
 class InvoiceItem < ApplicationRecord
   validates_presence_of :quantity, :unit_price_in_cents
 

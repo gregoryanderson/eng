@@ -1,3 +1,5 @@
+require 'csv'
+
 class Item < ApplicationRecord
   validates_presence_of :name, :description, :unit_price_in_cents, :merchant_id
   belongs_to :merchant
